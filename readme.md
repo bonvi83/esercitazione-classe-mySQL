@@ -34,10 +34,10 @@ FROM `prestiti`
 WHERE utente_id = 1;
 ```
 
-5. Contare le copie disponibili per ogni genere -NON FUNZIONA-
+1. Contare le copie disponibili per ogni genere
 
 ```
-SELECT SUM (libri.numero_copie),
+SELECT SUM(libri.numero_copie),
 generi.nome
 FROM `libri`
 INNER JOIN generi ON generi.id = libri.genere_id
