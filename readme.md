@@ -34,7 +34,7 @@ FROM `prestiti`
 WHERE utente_id = 1;
 ```
 
-1. Contare le copie disponibili per ogni genere
+5. Contare le copie disponibili per ogni genere
 
 ```
 SELECT SUM(libri.numero_copie),
